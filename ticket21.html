@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 21</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+      color: #003366;
+    }
+    .answer p {
+      margin: 0.5rem 0;
+    }
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .question h2 {
+        font-size: 1rem;
+      }
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 21</h1>
+
+    <div class="question">
+      <h2>1. Укажите применение, характеристики и строение коаксиального кабеля. Укажите преимущества и недостатки коаксиального кабеля по сравнению с другими видами кабелей.</h2>
+      <div class="answer">
+        <p><strong>Применение коаксиального кабеля:</strong> используется для передачи телевизионных сигналов, в локальных сетях, системах видеонаблюдения и других приложениях, требующих высокоскоростной передачи данных.</p>
+        <p><strong>Строение:</strong> центральная медная жила, окружённая диэлектриком, металлическим экраном (фольга или оплетка) и внешней изоляцией.</p>
+        <p><strong>Характеристики:</strong> высокая защита от электромагнитных помех, стабильное сопротивление (обычно 50 или 75 Ом), поддержка высоких частот передачи.</p>
+        <p><strong>Преимущества:</strong></p>
+        <ul>
+          <li>Малая чувствительность к внешним помехам благодаря экрану.</li>
+          <li>Долговечность и надёжность передачи сигнала.</li>
+          <li>Возможность передачи на большие расстояния без значительных потерь.</li>
+        </ul>
+        <p><strong>Недостатки:</strong></p>
+        <ul>
+          <li>Больший диаметр и вес по сравнению с витой парой.</li>
+          <li>Сложность монтажа и высокая стоимость.</li>
+          <li>Менее гибкий, что затрудняет прокладку в труднодоступных местах.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятиям «хранимая процедура», «пользовательская функция». Перечислите и охарактеризуйте категории пользовательских функций. Укажите отличия хранимых процедур и пользовательских функций.</h2>
+      <div class="answer">
+        <p><strong>Хранимая процедура</strong> — набор SQL-команд, сохранённых в базе данных для выполнения определённой задачи, часто с возможностью передачи параметров.</p>
+        <p><strong>Пользовательская функция</strong> — функция, написанная пользователем, возвращающая значение и используемая в SQL-запросах как выражение.</p>
+        <p><u>Категории пользовательских функций:</u></p>
+        <ul>
+          <li><strong>Скалярные функции</strong> — возвращают одно значение.</li>
+          <li><strong>Табличные функции</strong> — возвращают набор строк (таблицу).</li>
+          <li><strong>Агрегатные функции</strong> — выполняют вычисления по набору значений (например, сумма, среднее).</li>
+        </ul>
+        <p><strong>Отличия:</strong></p>
+        <ul>
+          <li>Хранимые процедуры не обязательно возвращают значение, функции — всегда возвращают.</li>
+          <li>Функции можно использовать внутри SQL-выражений, процедуры — нет.</li>
+          <li>Процедуры могут выполнять транзакционные операции и изменять состояние базы, функции — обычно нет.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Перечислите и охарактеризуйте теги для создания гиперссылок, списков различных видов, таблиц.</h2>
+      <div class="answer">
+        <p><strong>Гиперссылки:</strong></p>
+        <ul>
+          <li><code>&lt;a href="URL"&gt;текст ссылки&lt;/a&gt;</code> — создаёт ссылку на указанный URL.</li>
+        </ul>
+        <p><strong>Списки:</strong></p>
+        <ul>
+          <li><code>&lt;ul&gt;</code> — маркированный (ненумерованный) список.</li>
+          <li><code>&lt;ol&gt;</code> — нумерованный список.</li>
+          <li><code>&lt;li&gt;</code> — элемент списка.</li>
+          <li><code>&lt;dl&gt;</code> — список определений (термин и описание).</li>
+          <li><code>&lt;dt&gt;</code> — термин в списке определений.</li>
+          <li><code>&lt;dd&gt;</code> — описание термина.</li>
+        </ul>
+        <p><strong>Таблицы:</strong></p>
+        <ul>
+          <li><code>&lt;table&gt;</code> — контейнер таблицы.</li>
+          <li><code>&lt;tr&gt;</code> — строка таблицы.</li>
+          <li><code>&lt;th&gt;</code> — заголовочная ячейка (обычно в шапке таблицы).</li>
+          <li><code>&lt;td&gt;</code> — обычная ячейка таблицы.</li>
+          <li><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> — секции таблицы для заголовка, тела и подвала соответственно.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

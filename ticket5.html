@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билет 5</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+      font-style: normal;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 5</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятиям «IP адрес», «IPv4 адресация», «подсеть». Укажите, из каких трех основных частей состоит пакет IPv4.</h2>
+      <div class="answer">
+        <p><strong>IP-адрес</strong> — уникальный сетевой адрес устройства в IP-сети, необходимый для маршрутизации и обмена данными</p>
+        <p><strong>IPv4-адресация</strong> — система адресации, использующая 32-битные адреса, разделённые на 4 октета (например, 192.168.1.1)</p>
+        <p><strong>Подсеть</strong> — логически выделенный сегмент IP-сети, имеющий общий сетевой адрес и маску подсети</p>
+        <p><u>Пакет IPv4 состоит из:</u></p>
+        <ul>
+          <li><strong>Заголовок</strong> — содержит адреса источника и назначения, TTL, длину пакета и др.</li>
+          <li><strong>Поле данных</strong> — полезная нагрузка (информация для передачи)</li>
+          <li><strong>Контрольная сумма</strong> — используется для проверки целостности заголовка</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Перечислите и охарактеризуйте элементы SELECT-запроса с указанием, какие из этих элементов являются необязательными. Укажите основное отличие в работе ключевых слов WHERE и HAVING в запросах на выборку данных.</h2>
+      <div class="answer">
+        <p><strong>Основные элементы SELECT-запроса:</strong></p>
+        <ul>
+          <li><strong>SELECT</strong> — указывает, какие столбцы выбирать</li>
+          <li><strong>FROM</strong> — указывает таблицу или таблицы для выборки</li>
+          <li><strong>WHERE</strong> — фильтрация строк до группировки (необязательный)</li>
+          <li><strong>GROUP BY</strong> — группировка строк по указанным полям (необязательный)</li>
+          <li><strong>HAVING</strong> — фильтрация после группировки (необязательный)</li>
+          <li><strong>ORDER BY</strong> — сортировка результата (необязательный)</li>
+        </ul>
+        <p><u>Отличие WHERE и HAVING:</u></p>
+        <ul>
+          <li><strong>WHERE</strong> фильтрует строки перед группировкой</li>
+          <li><strong>HAVING</strong> фильтрует уже сгруппированные данные</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Что такое «коммутатор»? Опишите, как он функционирует, перечислите и охарактеризуйте режимы коммутации. В чем отличие коммутатора от концентратора?</h2>
+      <div class="answer">
+        <p><strong>Коммутатор (switch)</strong> — это сетевое устройство, которое пересылает кадры данных между портами на основе MAC-адресов</p>
+        <p><u>Принцип работы:</u></p>
+        <ul>
+          <li>Сканирует MAC-адрес источника и строит таблицу адресов</li>
+          <li>Пересылает кадры только на нужный порт, снижая коллизии</li>
+        </ul>
+        <p><u>Режимы коммутации:</u></p>
+        <ul>
+          <li><strong>Store-and-forward</strong> — полный приём кадра, проверка на ошибки, затем передача</li>
+          <li><strong>Cut-through</strong> — передача кадра начинается после получения адреса назначения</li>
+          <li><strong>Fragment-free</strong> — передача после первых 64 байт (типичная длина ошибок)</li>
+        </ul>
+        <p><u>Отличие от концентратора (hub):</u></p>
+        <ul>
+          <li>Концентратор просто повторяет сигнал на все порты</li>
+          <li>Коммутатор направляет трафик только на нужный порт</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

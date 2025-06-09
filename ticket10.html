@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 10</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 10</h1>
+
+    <div class="question">
+      <h2>1. Укажите основные команды манипулирования данными в SQL. Укажите и охарактеризуйте основные элементы синтаксиса данных команд</h2>
+      <div class="answer">
+        <p><strong>Команды манипулирования данными (DML)</strong> позволяют работать с содержимым таблиц:</p>
+        <ul>
+          <li><strong>SELECT</strong> — выборка данных</li>
+          <li><strong>INSERT</strong> — добавление новых записей</li>
+          <li><strong>UPDATE</strong> — изменение существующих записей</li>
+          <li><strong>DELETE</strong> — удаление записей</li>
+        </ul>
+        <p><u>Основные элементы синтаксиса:</u></p>
+        <ul>
+          <li><code>WHERE</code> — фильтрация по условиям</li>
+          <li><code>GROUP BY</code> — группировка</li>
+          <li><code>HAVING</code> — фильтрация после группировки</li>
+          <li><code>ORDER BY</code> — сортировка результатов</li>
+          <li><code>JOIN</code> — объединение таблиц</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «сетевая модель OSI». Перечислите и укажите функции уровней сетевой модели OSI</h2>
+      <div class="answer">
+        <p><strong>Модель OSI</strong> (Open Systems Interconnection) — эталонная сетевая модель, состоящая из 7 уровней, каждый из которых выполняет определённые функции при передаче данных.</p>
+        <ul>
+          <li><strong>1. Физический уровень</strong> — передача битов по физической среде</li>
+          <li><strong>2. Канальный уровень</strong> — определение границ кадров, контроль ошибок</li>
+          <li><strong>3. Сетевой уровень</strong> — маршрутизация и адресация (IP)</li>
+          <li><strong>4. Транспортный уровень</strong> — надежность доставки (TCP, UDP)</li>
+          <li><strong>5. Сеансовый уровень</strong> — управление сеансами связи</li>
+          <li><strong>6. Представительный уровень</strong> — преобразование форматов данных</li>
+          <li><strong>7. Прикладной уровень</strong> — взаимодействие с пользовательскими приложениями</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «брандмауэр», «антивирусная программа». Приведите классификацию антивирусных программ. Перечислите известные антивирусные программы и их функции</h2>
+      <div class="answer">
+        <p><strong>Брандмауэр (Firewall)</strong> — средство защиты, контролирующее сетевой трафик на основе заданных правил.</p>
+        <p><strong>Антивирусная программа</strong> — ПО для обнаружения, удаления и предотвращения вредоносного ПО.</p>
+        <p><u>Классификация антивирусов:</u></p>
+        <ul>
+          <li>Сигнатурные</li>
+          <li>Проактивные (поведенческие)</li>
+          <li>Облачные</li>
+          <li>Комплексные (интернет-секьюрити)</li>
+        </ul>
+        <p><u>Известные антивирусы:</u></p>
+        <ul>
+          <li><strong>Kaspersky</strong> — защита в реальном времени, контроль приложений</li>
+          <li><strong>Avast</strong> — облачный анализ, веб-защита</li>
+          <li><strong>Norton</strong> — защита от фишинга, резервное копирование</li>
+          <li><strong>Dr.Web</strong> — лечение заражённых систем</li>
+          <li><strong>Bitdefender</strong> — антишпион, родительский контроль</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билет 6</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 6</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение следующим понятиям «физическая модель диска», «логическая модель диска». Перечислите папки в корневом каталоге Linux и укажите, какие данные они хранят</h2>
+      <div class="answer">
+        <p><strong>Физическая модель диска</strong> — описание устройства хранения данных на физическом уровне (например, секторы, дорожки, цилиндры).</p>
+        <p><strong>Логическая модель диска</strong> — организация данных с точки зрения операционной системы (файловая система, папки, файлы).</p>
+        <p><u>Основные папки в корне Linux:</u></p>
+        <ul>
+          <li><strong>/bin</strong> — основные исполняемые файлы</li>
+          <li><strong>/boot</strong> — загрузочные файлы</li>
+          <li><strong>/etc</strong> — конфигурационные файлы</li>
+          <li><strong>/home</strong> — домашние каталоги пользователей</li>
+          <li><strong>/lib</strong> — библиотеки, используемые системными программами</li>
+          <li><strong>/media</strong> — точки монтирования съемных носителей</li>
+          <li><strong>/opt</strong> — сторонние приложения</li>
+          <li><strong>/root</strong> — домашняя директория суперпользователя</li>
+          <li><strong>/sbin</strong> — системные утилиты</li>
+          <li><strong>/tmp</strong> — временные файлы</li>
+          <li><strong>/usr</strong> — пользовательские приложения</li>
+          <li><strong>/var</strong> — переменные файлы, логи</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «HTML». Перечислите и опишите содержимое основных элементов структуры HTML-документа</h2>
+      <div class="answer">
+        <p><strong>HTML (HyperText Markup Language)</strong> — язык разметки, используемый для создания структуры веб-страниц.</p>
+        <p><u>Основные элементы HTML-документа:</u></p>
+        <ul>
+          <li><strong>&lt;!DOCTYPE html&gt;</strong> — определяет тип документа</li>
+          <li><strong>&lt;html&gt;</strong> — корневой элемент документа</li>
+          <li><strong>&lt;head&gt;</strong> — содержит метаданные (кодировка, заголовок, стили, скрипты)</li>
+          <li><strong>&lt;title&gt;</strong> — заголовок страницы в браузере</li>
+          <li><strong>&lt;body&gt;</strong> — содержимое страницы, отображаемое пользователю</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «цифровая подпись». Охарактеризуйте причины ее использования</h2>
+      <div class="answer">
+        <p><strong>Цифровая подпись</strong> — это криптографический механизм, подтверждающий подлинность и целостность электронного документа или сообщения.</p>
+        <p><u>Основные причины использования:</u></p>
+        <ul>
+          <li><strong>Аутентификация</strong> — проверка отправителя</li>
+          <li><strong>Целостность</strong> — защита от изменений данных</li>
+          <li><strong>Неподделываемость</strong> — гарантия, что сообщение подписано конкретным лицом</li>
+          <li><strong>Юридическая значимость</strong> — использование в электронных сделках и документах</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

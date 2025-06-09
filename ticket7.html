@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 7</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 7</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «реляционная БД». Охарактеризуйте структуру реляционной базы данных</h2>
+      <div class="answer">
+        <p><strong>Реляционная база данных</strong> — это БД, в которой данные организованы в виде таблиц (отношений), каждая из которых состоит из строк и столбцов.</p>
+        <p><u>Структура реляционной БД включает:</u></p>
+        <ul>
+          <li>Таблицы — основные объекты хранения данных</li>
+          <li>Строки (записи) — представляют отдельные экземпляры данных</li>
+          <li>Столбцы (поля) — представляют атрибуты записей</li>
+          <li>Первичные и внешние ключи — для идентификации записей и установления связей между таблицами</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятиям «коллизия пакетов», «CSMA/CD», «CSMA/CA». Укажите отличие в процессе обработки коллизий между CSMA/CD и CSMA/CA</h2>
+      <div class="answer">
+        <p><strong>Коллизия пакетов</strong> — ситуация, когда два устройства передают данные по сети одновременно, вызывая их искажение.</p>
+        <p><strong>CSMA/CD (Carrier Sense Multiple Access with Collision Detection)</strong> — метод, при котором устройство слушает канал и, в случае коллизии, прекращает передачу и повторяет её позже. Используется в проводных сетях (Ethernet).</p>
+        <p><strong>CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)</strong> — метод, при котором устройство пытается избежать коллизии заранее, посылая запрос на передачу. Используется в беспроводных сетях (Wi-Fi).</p>
+        <p><u>Отличие:</u> CSMA/CD <em>обнаруживает</em> коллизии и реагирует после их возникновения, CSMA/CA <em>предотвращает</em> коллизии до начала передачи.</p>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «буфер обмена». Охарактеризуйте его назначение. Перечислите стандартные горячие клавиши для работы с буфером обмена для ОС Windows</h2>
+      <div class="answer">
+        <p><strong>Буфер обмена</strong> — это область памяти, в которую временно помещаются данные при копировании или вырезании, чтобы затем вставить их в другое место.</p>
+        <p><u>Назначение:</u> обмен данными между приложениями и частями документа.</p>
+        <p><u>Горячие клавиши Windows:</u></p>
+        <ul>
+          <li><strong>Ctrl + C</strong> — копировать</li>
+          <li><strong>Ctrl + X</strong> — вырезать</li>
+          <li><strong>Ctrl + V</strong> — вставить</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

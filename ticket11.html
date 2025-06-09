@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 11</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 11</h1>
+
+    <div class="question">
+      <h2>1. Дайте характеристику SQL. В чем его отличие от языков структурного программирования</h2>
+      <div class="answer">
+        <p><strong>SQL (Structured Query Language)</strong> — язык структурированных запросов, используемый для работы с базами данных. Он позволяет выполнять операции выборки, обновления, добавления и удаления данных, а также управлять структурами БД.</p>
+        <p><u>Отличие от языков структурного программирования:</u></p>
+        <ul>
+          <li>SQL — декларативный язык: указывается, что нужно получить, а не как это сделать</li>
+          <li>Структурные языки (например, C, Pascal) — императивные: описывают последовательность действий</li>
+          <li>SQL применяется только для взаимодействия с БД, а языки программирования — для построения полноценных программ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Охарактеризуйте кабель типа «витая пара»: область использования, устройство и основные свойства. Сравните его достоинства и недостатки с другими кабелями</h2>
+      <div class="answer">
+        <p><strong>Витая пара</strong> — тип кабеля, состоящий из пар изолированных медных проводов, скрученных между собой.</p>
+        <p><u>Устройство:</u> пары проводов с определённой частотой скручивания, экранированные или неэкранированные.</p>
+        <p><u>Области применения:</u> локальные сети Ethernet, телефония, системы видеонаблюдения.</p>
+        <p><u>Основные свойства:</u></p>
+        <ul>
+          <li>Скорость передачи: до 10 Гбит/с (в зависимости от категории)</li>
+          <li>Дальность: до 100 м без усилителей</li>
+          <li>Стоимость: низкая</li>
+        </ul>
+        <p><u>Преимущества:</u></p>
+        <ul>
+          <li>Низкая стоимость</li>
+          <li>Гибкость и лёгкость прокладки</li>
+        </ul>
+        <p><u>Недостатки по сравнению с другими кабелями:</u></p>
+        <ul>
+          <li>Низкая устойчивость к помехам (в сравнении с коаксиалом или оптикой)</li>
+          <li>Ограниченная длина линии</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «хеширование», «хеш-функция», «хеш». Приведите примеры хеш-функций и охарактеризуйте их</h2>
+      <div class="answer">
+        <p><strong>Хеширование</strong> — процесс преобразования входных данных произвольной длины в фиксированную последовательность (хеш).</p>
+        <p><strong>Хеш-функция</strong> — алгоритм, выполняющий хеширование.</p>
+        <p><strong>Хеш</strong> — результат работы хеш-функции.</p>
+        <p><u>Примеры хеш-функций:</u></p>
+        <ul>
+          <li><strong>MD5</strong> — устаревшая, 128 бит, используется для проверки целостности</li>
+          <li><strong>SHA-1</strong> — 160 бит, также считается небезопасной</li>
+          <li><strong>SHA-256</strong> — современная, используется в криптографии</li>
+        </ul>
+        <p><u>Характеристики хорошей хеш-функции:</u></p>
+        <ul>
+          <li>Односторонность (невозможно восстановить оригинал)</li>
+          <li>Равномерное распределение</li>
+          <li>Устойчивость к коллизиям</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

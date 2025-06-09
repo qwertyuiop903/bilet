@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билет 2</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+      font-style: normal;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 2</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «проектирование БД». Перечислите и охарактеризуйте виды проектирования.</h2>
+      <div class="answer">
+        <p><strong>Проектирование базы данных</strong> — это процесс создания структуры БД, обеспечивающей хранение, целостность и удобный доступ к данным</p>
+        <p><u>Виды проектирования</u></p>
+        <ul>
+          <li><strong>Инфологическое</strong> — выявление сущностей, атрибутов и связей между ними на основе предметной области</li>
+          <li><strong>Даталогическое</strong> — преобразование инфологической модели в логическую модель, ориентированную на СУБД</li>
+          <li><strong>Физическое</strong> — оптимизация структуры хранения с учётом объёма данных, скорости доступа и ограничений оборудования</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Перечислите и опишите характеристики линий связи. Приведите примеры причин ухудшения передачи данных по линиям связи.</h2>
+      <div class="answer">
+        <p><u>Характеристики линий связи</u></p>
+        <ul>
+          <li><strong>Пропускная способность</strong> — максимальная скорость передачи данных</li>
+          <li><strong>Полоса пропускания</strong> — диапазон частот, поддерживаемый каналом</li>
+          <li><strong>Задержка</strong> — время прохождения сигнала от источника к приёмнику</li>
+          <li><strong>Уровень шума</strong> — степень искажений сигнала</li>
+          <li><strong>Тип среды</strong> — проводная (витая пара, коаксиал) или беспроводная</li>
+        </ul>
+        <p><u>Причины ухудшения передачи данных</u></p>
+        <ul>
+          <li>Помехи от других устройств</li>
+          <li>Физические повреждения кабеля</li>
+          <li>Большое расстояние передачи</li>
+          <li>Низкое качество оборудования</li>
+          <li>Неправильная настройка сети</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «виртуальная память», «ассоциативная память», «таблица страниц». Распишите принцип работы виртуальной памяти.</h2>
+      <div class="answer">
+        <p><strong>Виртуальная память</strong> — механизм, позволяющий использовать часть внешней памяти как продолжение оперативной</p>
+        <p><strong>Ассоциативная память</strong> — тип памяти, в которой доступ к данным осуществляется по содержимому, а не по адресу</p>
+        <p><strong>Таблица страниц</strong> — структура, отображающая виртуальные адреса в физические</p>
+        <p><u>Принцип работы виртуальной памяти</u></p>
+        <ul>
+          <li>Процесс обращается к виртуальному адресу</li>
+          <li>ОС с помощью таблицы страниц определяет соответствующий физический адрес</li>
+          <li>Если страница не загружена — вызывается исключение, и страница подгружается из файла подкачки</li>
+          <li>Процесс продолжает работу, не замечая подкачки</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

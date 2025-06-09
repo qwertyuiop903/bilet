@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 13</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 13</h1>
+
+    <div class="question">
+      <h2>1. Опишите принцип работы, преимущества и недостатки статической маршрутизации. Приведите примеры протоколов статической маршрутизации и охарактеризуйте их</h2>
+      <div class="answer">
+        <p><strong>Статическая маршрутизация</strong> — это ручная настройка маршрутов администратором без участия протоколов динамической маршрутизации.</p>
+        <p><u>Преимущества:</u></p>
+        <ul>
+          <li>Простота настройки в небольших сетях</li>
+          <li>Высокая производительность, так как не требуется обмен маршрутной информацией</li>
+        </ul>
+        <p><u>Недостатки:</u></p>
+        <ul>
+          <li>Сложность масштабирования</li>
+          <li>Неавтоматическое восстановление маршрутов при сбоях</li>
+        </ul>
+        <p><u>Примеры:</u></p>
+        <ul>
+          <li><strong>Static Routing</strong> — вручную добавляемые маршруты с помощью команды `ip route`</li>
+          <li><strong>Policy-Based Routing</strong> — маршрутизация на основе политики, а не только IP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «администрирование БД». Перечислите и опишите задачи администратора БД</h2>
+      <div class="answer">
+        <p><strong>Администрирование БД</strong> — это процесс управления и поддержки баз данных с целью обеспечения их надёжности, производительности и безопасности.</p>
+        <p><u>Основные задачи администратора:</u></p>
+        <ul>
+          <li>Установка и настройка СУБД</li>
+          <li>Управление пользователями и правами доступа</li>
+          <li>Резервное копирование и восстановление данных</li>
+          <li>Оптимизация производительности</li>
+          <li>Мониторинг состояния базы</li>
+          <li>Обеспечение безопасности данных</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Укажите назначение форм на веб-страницах. Перечислите и охарактеризуйте управляющие элементы для создания форм с помощью HTML</h2>
+      <div class="answer">
+        <p><strong>Формы</strong> используются для ввода и отправки данных пользователем на сервер.</p>
+        <p><u>Основные управляющие элементы:</u></p>
+        <ul>
+          <li><code>&lt;input type="text"&gt;</code> — поле ввода текста</li>
+          <li><code>&lt;input type="password"&gt;</code> — поле для ввода пароля</li>
+          <li><code>&lt;input type="checkbox"&gt;</code> — флажок выбора</li>
+          <li><code>&lt;input type="radio"&gt;</code> — переключатель</li>
+          <li><code>&lt;select&gt;</code> и <code>&lt;option&gt;</code> — выпадающий список</li>
+          <li><code>&lt;textarea&gt;</code> — многострочное текстовое поле</li>
+          <li><code>&lt;button&gt;</code> и <code>&lt;input type="submit"&gt;</code> — кнопка отправки формы</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

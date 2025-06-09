@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 12</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 12</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятиям «первичный ключ» и «внешний ключ». Укажите и охарактеризуйте виды связей между таблицами в реляционных БД</h2>
+      <div class="answer">
+        <p><strong>Первичный ключ</strong> — это уникальный идентификатор записи в таблице. Он не может содержать NULL и должен быть уникальным.</p>
+        <p><strong>Внешний ключ</strong> — это поле, указывающее на первичный ключ другой таблицы, обеспечивая связь между таблицами.</p>
+        <p><u>Виды связей:</u></p>
+        <ul>
+          <li><strong>Один к одному (1:1)</strong> — каждой записи в первой таблице соответствует одна запись во второй</li>
+          <li><strong>Один ко многим (1:N)</strong> — одной записи первой таблицы соответствует несколько записей второй</li>
+          <li><strong>Многие ко многим (M:N)</strong> — реализуется через промежуточную таблицу</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «протокол». Охарактеризуйте протоколы «IP», «TCP», «UDP»</h2>
+      <div class="answer">
+        <p><strong>Протокол</strong> — это набор правил, по которым происходит обмен данными в сети.</p>
+        <ul>
+          <li><strong>IP (Internet Protocol)</strong> — обеспечивает адресацию и маршрутизацию пакетов по сети.</li>
+          <li><strong>TCP (Transmission Control Protocol)</strong> — обеспечивает надёжную доставку данных, контроль ошибок, подтверждения получения.</li>
+          <li><strong>UDP (User Datagram Protocol)</strong> — передаёт данные без установления соединения, быстро, но без гарантии доставки.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Что понимается под понятием «командная строка»? Перечислите основные команды для работы с каталогами и файлами и охарактеризуйте каждую</h2>
+      <div class="answer">
+        <p><strong>Командная строка</strong> — интерфейс, позволяющий управлять системой с помощью текстовых команд.</p>
+        <p><u>Основные команды:</u></p>
+        <ul>
+          <li><code>cd</code> — смена текущего каталога</li>
+          <li><code>dir</code> (Windows) или <code>ls</code> (Linux) — просмотр содержимого каталога</li>
+          <li><code>mkdir</code> — создание нового каталога</li>
+          <li><code>del</code> (Windows) или <code>rm</code> (Linux) — удаление файлов</li>
+          <li><code>copy</code> (Windows) или <code>cp</code> (Linux) — копирование файлов</li>
+          <li><code>move</code> (Windows) или <code>mv</code> (Linux) — перемещение файлов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 18</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+      color: #003366;
+    }
+    .answer p {
+      margin: 0.5rem 0;
+    }
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .question h2 {
+        font-size: 1rem;
+      }
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 18</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «интерфейс ОС». Перечислите и охарактеризуйте основные элементы графического интерфейса ОС Windows.</h2>
+      <div class="answer">
+        <p><strong>Интерфейс операционной системы (ОС)</strong> — совокупность средств и способов взаимодействия пользователя с компьютерной системой.</p>
+        <p><u>Основные элементы графического интерфейса Windows:</u></p>
+        <ul>
+          <li><strong>Рабочий стол</strong> — основная область экрана с иконками и фоновым изображением.</li>
+          <li><strong>Панель задач</strong> — строка для быстрого запуска программ, отображения открытых окон и системных уведомлений.</li>
+          <li><strong>Меню «Пуск»</strong> — центральное меню для доступа к программам, настройкам и выключению системы.</li>
+          <li><strong>Окна</strong> — область отображения приложений и документов с заголовками и элементами управления.</li>
+          <li><strong>Иконки</strong> — графические изображения для быстрого доступа к файлам, папкам и программам.</li>
+          <li><strong>Диалоговые окна</strong> — окна для взаимодействия пользователя с программами (например, запросы на ввод).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Укажите назначение команды ALTER TABLE. Перечислите способы применения ALTER TABLE для изменения таблицы.</h2>
+      <div class="answer">
+        <p><strong>ALTER TABLE</strong> — команда SQL для изменения структуры существующей таблицы в базе данных.</p>
+        <p><u>Способы применения ALTER TABLE:</u></p>
+        <ul>
+          <li><strong>Добавление столбца:</strong> <code>ALTER TABLE имя_таблицы ADD имя_столбца тип_данных;</code></li>
+          <li><strong>Удаление столбца:</strong> <code>ALTER TABLE имя_таблицы DROP COLUMN имя_столбца;</code></li>
+          <li><strong>Изменение типа столбца:</strong> <code>ALTER TABLE имя_таблицы ALTER COLUMN имя_столбца TYPE новый_тип;</code></li>
+          <li><strong>Переименование столбца:</strong> <code>ALTER TABLE имя_таблицы RENAME COLUMN старое_имя TO новое_имя;</code></li>
+          <li><strong>Добавление ограничений (constraints):</strong> например, уникальность или внешний ключ.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «асимметричная криптосистема». Охарактеризуйте алгоритм шифрования RSA и схему Эль-Гамаля.</h2>
+      <div class="answer">
+        <p><strong>Асимметричная криптосистема</strong> — система шифрования, использующая пару ключей: публичный (открытый) для шифрования и приватный (секретный) для дешифрования.</p>
+        <p><u>Алгоритм RSA:</u> основан на трудности факторизации больших чисел. Пользователь генерирует пару ключей, публичный используется для шифрования, приватный — для расшифровки. Применяется для безопасной передачи данных и цифровых подписей.</p>
+        <p><u>Схема Эль-Гамаля:</u> основана на дискретном логарифме. Использует случайные числа и вычисления по модулю для обеспечения безопасности. Позволяет выполнять шифрование и цифровую подпись с высокой степенью защиты.</p>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

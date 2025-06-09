@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 22</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+      color: #003366;
+    }
+    .answer p {
+      margin: 0.5rem 0;
+    }
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .question h2 {
+        font-size: 1rem;
+      }
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 22</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию NAT. Опишите принцип работы NAT. Перечислите и охарактеризуйте типы NAT.</h2>
+      <div class="answer">
+        <p><strong>NAT (Network Address Translation)</strong> — технология преобразования сетевых адресов, позволяющая множеству устройств в локальной сети использовать один публичный IP-адрес для выхода в интернет.</p>
+        <p><strong>Принцип работы:</strong> NAT-устройство (обычно маршрутизатор) заменяет приватные IP-адреса внутренних устройств на публичный IP-адрес при передаче данных во внешнюю сеть и обратно, отслеживая соединения с помощью таблицы трансляции.</p>
+        <p><strong>Типы NAT:</strong></p>
+        <ul>
+          <li><strong>Статический NAT</strong> — постоянное сопоставление одного внутреннего адреса с одним внешним (1:1).</li>
+          <li><strong>Динамический NAT</strong> — пул публичных адресов распределяется между внутренними устройствами по мере необходимости.</li>
+          <li><strong>PAT (Port Address Translation)</strong> или NAT Overload — несколько внутренних адресов преобразуются в один публичный с использованием разных портов.</li>
+          <li><strong>NAT с перекрытием</strong> — когда внутренние и внешние сети используют одинаковые диапазоны IP-адресов.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «DLL (Dynamic Link Library)». Опишите структуру DLL. Укажите основные утилиты для работы с DLL и их функционал.</h2>
+      <div class="answer">
+        <p><strong>DLL (Dynamic Link Library)</strong> — динамически подключаемая библиотека в Windows, содержащая код и данные, которые могут использоваться несколькими программами одновременно.</p>
+        <p><strong>Структура DLL:</strong></p>
+        <ul>
+          <li>Заголовок (PE-формат) с метаданными</li>
+          <li>Таблица экспорта (функции, доступные другим программам)</li>
+          <li>Таблица импорта (внешние зависимости)</li>
+          <li>Секции кода (.text), данных (.data) и ресурсов (.rsrc)</li>
+          <li>Таблица перемещений (relocations)</li>
+        </ul>
+        <p><strong>Утилиты для работы с DLL:</strong></p>
+        <ul>
+          <li><strong>Dependency Walker</strong> — анализ зависимостей DLL, просмотр экспортируемых/импортируемых функций</li>
+          <li><strong>DLL Export Viewer</strong> — просмотр экспортируемых функций и их ординалов</li>
+          <li><strong>PE Explorer</strong> — анализ структуры PE-файлов, включая DLL</li>
+          <li><strong>dumpbin</strong> (из Visual Studio) — анализ содержимого DLL из командной строки</li>
+          <li><strong>regsvr32</strong> — регистрация и отмена регистрации DLL в системе</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «хакерская атака», «эксплойт». Перечислите и охарактеризуйте технологии обнаружения атак.</h2>
+      <div class="answer">
+        <p><strong>Хакерская атака</strong> — умышленное действие, направленное на нарушение конфиденциальности, целостности или доступности информационной системы.</p>
+        <p><strong>Эксплойт</strong> — фрагмент программного кода или последовательность команд, использующие уязвимости в программном обеспечении для проведения атаки.</p>
+        <p><strong>Технологии обнаружения атак:</strong></p>
+        <ul>
+          <li><strong>IDS (Intrusion Detection System)</strong> — системы обнаружения вторжений, анализирующие сетевой трафик или события на хостах</li>
+          <li><strong>IPS (Intrusion Prevention System)</strong> — системы предотвращения вторжений, активно блокирующие атаки</li>
+          <li><strong>SIEM (Security Information and Event Management)</strong> — комплексные системы сбора и анализа событий безопасности</li>
+          <li><strong>Анализ сигнатур</strong> — поиск известных шаблонов атак</li>
+          <li><strong>Анализ аномалий</strong> — выявление отклонений от нормального поведения</li>
+          <li><strong>Песочницы (Sandboxing)</strong> — изолированная среда для анализа подозрительных объектов</li>
+          <li><strong>Honeypot</strong> — ловушки для привлечения и изучения атакующих</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

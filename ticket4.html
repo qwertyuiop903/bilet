@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билет 4</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+      font-style: normal;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 4</h1>
+
+    <div class="question">
+      <h2>1. Укажите назначение ER-модели в процессе проектирования БД. Перечислите и охарактеризуйте основные элементы ER-модели.</h2>
+      <div class="answer">
+        <p><strong>ER-модель (Entity-Relationship)</strong> — это графическое представление предметной области, используемое для концептуального проектирования БД</p>
+        <p><u>Назначение</u> — выявление сущностей, их атрибутов и связей между ними, что помогает в построении логической структуры БД</p>
+        <p><u>Основные элементы ER-модели</u></p>
+        <ul>
+          <li><strong>Сущности (Entity)</strong> — объекты предметной области (например, «Клиент»)</li>
+          <li><strong>Атрибуты</strong> — характеристики сущностей (например, ФИО, дата рождения)</li>
+          <li><strong>Связи (Relationship)</strong> — взаимодействие между сущностями (например, «Покупает» между Клиентом и Товаром)</li>
+          <li><strong>Ключевые атрибуты</strong> — уникальные идентификаторы сущности</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятиям «сетевой мост», «маршрутизатор». Опишите принцип работы сетевого моста и маршрутизатора.</h2>
+      <div class="answer">
+        <p><strong>Сетевой мост (Bridge)</strong> — устройство, объединяющее два сегмента сети и фильтрующее трафик на уровне MAC-адресов</p>
+        <p><strong>Маршрутизатор (Router)</strong> — устройство, направляющее пакеты между разными сетями по IP-адресам</p>
+        <p><u>Принцип работы моста</u></p>
+        <ul>
+          <li>Анализирует MAC-адреса передаваемых кадров</li>
+          <li>Передаёт кадры только в нужный сегмент, снижая нагрузку</li>
+        </ul>
+        <p><u>Принцип работы маршрутизатора</u></p>
+        <ul>
+          <li>Использует таблицу маршрутизации для выбора пути передачи IP-пакета</li>
+          <li>Поддерживает NAT, DHCP, фильтрацию и трансляцию адресов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «операционная система». Опишите принцип работы ОС. Укажите основные компоненты ОС.</h2>
+      <div class="answer">
+        <p><strong>Операционная система (ОС)</strong> — это комплекс программ, обеспечивающий управление ресурсами компьютера и взаимодействие с пользователем</p>
+        <p><u>Принцип работы ОС</u></p>
+        <ul>
+          <li>ОС загружается при включении компьютера</li>
+          <li>Организует выполнение процессов и управление памятью</li>
+          <li>Обеспечивает доступ к устройствам ввода/вывода и файловым системам</li>
+        </ul>
+        <p><u>Основные компоненты ОС</u></p>
+        <ul>
+          <li><strong>Ядро</strong> — управляет памятью, процессами, оборудованием</li>
+          <li><strong>Драйверы</strong> — обеспечивают взаимодействие с устройствами</li>
+          <li><strong>Оболочка</strong> — интерфейс пользователя (GUI или командная строка)</li>
+          <li><strong>Файловая система</strong> — структура хранения данных</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

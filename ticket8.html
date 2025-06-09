@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 8</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 8</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «беспроводная вычислительная сеть». Опишите принцип работы, проблемы и ограничения беспроводных сетей. Перечислите и опишите типы беспроводных сетей</h2>
+      <div class="answer">
+        <p><strong>Беспроводная вычислительная сеть</strong> — это сеть, в которой передача данных осуществляется без физического соединения, с использованием радиоволн, инфракрасных или микроволновых сигналов.</p>
+        <p><u>Принцип работы:</u> устройства обмениваются данными через точку доступа или напрямую друг с другом с использованием протоколов беспроводной связи (например, Wi-Fi, Bluetooth).</p>
+        <p><u>Проблемы и ограничения:</u></p>
+        <ul>
+          <li>Зависимость от радиопомех</li>
+          <li>Ограниченный радиус действия</li>
+          <li>Проблемы с безопасностью</li>
+          <li>Низкая стабильность по сравнению с проводными сетями</li>
+        </ul>
+        <p><u>Типы беспроводных сетей:</u></p>
+        <ul>
+          <li><strong>WPAN</strong> (личная) — короткий радиус (например, Bluetooth)</li>
+          <li><strong>WLAN</strong> (локальная) — Wi-Fi в пределах помещения</li>
+          <li><strong>WMAN</strong> (городская) — например, WiMAX</li>
+          <li><strong>WWAN</strong> (глобальная) — сотовые сети (3G, 4G, 5G)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «тип данных». Перечислите и опишите типы данных в языке SQL</h2>
+      <div class="answer">
+        <p><strong>Тип данных</strong> — это характеристика, определяющая, какие значения может принимать переменная или поле и какие операции с ним допустимы.</p>
+        <p><u>Типы данных в SQL:</u></p>
+        <ul>
+          <li><strong>Числовые</strong>: INT, SMALLINT, BIGINT, DECIMAL, FLOAT</li>
+          <li><strong>Строковые</strong>: CHAR, VARCHAR, TEXT</li>
+          <li><strong>Дата и время</strong>: DATE, TIME, DATETIME, TIMESTAMP</li>
+          <li><strong>Логические</strong>: BOOLEAN (TRUE / FALSE)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «манипулятор типа «мышь». Перечислите и охарактеризуйте виды данных манипуляторов по конструктивным особенностям</h2>
+      <div class="answer">
+        <p><strong>Манипулятор типа «мышь»</strong> — это устройство ввода, предназначенное для управления курсором на экране компьютера.</p>
+        <p><u>Виды мышей по конструктивным особенностям:</u></p>
+        <ul>
+          <li><strong>Механическая</strong> — использует шарик, движущийся по поверхности</li>
+          <li><strong>Оптическая</strong> — использует светодиод и датчики</li>
+          <li><strong>Лазерная</strong> — более точная, использует лазер</li>
+          <li><strong>Беспроводная</strong> — соединяется по радиоканалу (RF) или Bluetooth</li>
+          <li><strong>Сенсорная</strong> — не имеет физических кнопок, реагирует на касания</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

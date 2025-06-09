@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 24</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+      color: #003366;
+    }
+    .answer p {
+      margin: 0.5rem 0;
+    }
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .question h2 {
+        font-size: 1rem;
+      }
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 24</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятиям «каскадная таблица стилей (CSS)», «селектор». Опишите назначение CSS. Перечислите виды селекторов.</h2>
+      <div class="answer">
+        <p><strong>CSS (Cascading Style Sheets)</strong> — язык стилей, определяющий представление HTML-документов, включая дизайн, макет и вариации отображения для различных устройств.</p>
+        <p><strong>Селектор</strong> — шаблон для выбора элементов HTML, к которым будут применены стилевые правила.</p>
+        <p><strong>Назначение CSS:</strong></p>
+        <ul>
+          <li>Отделение содержания (HTML) от представления (стилей)</li>
+          <li>Управление внешним видом веб-страниц</li>
+          <li>Создание адаптивных дизайнов для разных устройств</li>
+          <li>Упрощение поддержки и изменения дизайна сайта</li>
+          <li>Повышение скорости загрузки страниц</li>
+        </ul>
+        <p><strong>Виды селекторов:</strong></p>
+        <ul>
+          <li><strong>Универсальный</strong> (*) — выбирает все элементы</li>
+          <li><strong>По тегу</strong> (div, p) — выбирает элементы по имени тега</li>
+          <li><strong>По классу</strong> (.classname) — выбирает элементы с указанным классом</li>
+          <li><strong>По идентификатору</strong> (#idname) — выбирает элемент с указанным id</li>
+          <li><strong>По атрибуту</strong> ([attr="value"]) — выбирает элементы по атрибуту</li>
+          <li><strong>Псевдоклассы</strong> (:hover, :focus) — выбирают элементы в особом состоянии</li>
+          <li><strong>Псевдоэлементы</strong> (::before, ::after) — выбирают часть элемента</li>
+          <li><strong>Комбинаторы</strong> (пробел, >, +, ~) — выбирают элементы по их положению</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Что такое «маркер доступа» и «проверка прав доступа»? Укажите ключевые компоненты маркера доступа и опишите основные его типы.</h2>
+      <div class="answer">
+        <p><strong>Маркер доступа (Access Token)</strong> — объект или структура данных, содержащая информацию о правах доступа субъекта (пользователя, процесса) к объектам системы.</p>
+        <p><strong>Проверка прав доступа</strong> — процесс верификации, имеет ли субъект необходимые права для выполнения запрошенной операции над объектом.</p>
+        <p><strong>Ключевые компоненты маркера доступа:</strong></p>
+        <ul>
+          <li>Идентификатор субъекта (SID)</li>
+          <li>Идентификатор группы/роли</li>
+          <li>Привилегии и права доступа</li>
+          <li>Временные параметры (срок действия)</li>
+          <li>Цифровая подпись (для проверки подлинности)</li>
+        </ul>
+        <p><strong>Основные типы маркеров доступа:</strong></p>
+        <ul>
+          <li><strong>Дискреционный (DAC)</strong> — владелец ресурса определяет права доступа</li>
+          <li><strong>Мандатный (MAC)</strong> — права назначаются системой на основе политик безопасности</li>
+          <li><strong>Ролевой (RBAC)</strong> — доступ предоставляется на основе ролей пользователя</li>
+          <li><strong>На основе атрибутов (ABAC)</strong> — доступ определяется атрибутами субъекта, ресурса и окружения</li>
+          <li><strong>OAuth-токены</strong> — используются в веб-приложениях для делегированного доступа</li>
+          <li><strong>JWT (JSON Web Tokens)</strong> — компактные токены в формате JSON с цифровой подписью</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «криптография», «криптоанализ», «шифр». Опишите основные функции криптосистем.</h2>
+      <div class="answer">
+        <p><strong>Криптография</strong> — наука о методах обеспечения конфиденциальности, целостности, аутентичности и невозможности отказа от авторства информации.</p>
+        <p><strong>Криптоанализ</strong> — наука о методах вскрытия шифров и получения исходного сообщения без знания ключа.</p>
+        <p><strong>Шифр</strong> — алгоритм преобразования информации с целью ее сокрытия от посторонних, использующий ключ для шифрования и дешифрования.</p>
+        <p><strong>Основные функции криптосистем:</strong></p>
+        <ul>
+          <li><strong>Конфиденциальность</strong> — защита от несанкционированного доступа</li>
+          <li><strong>Целостность</strong> — обнаружение любых изменений данных</li>
+          <li><strong>Аутентификация</strong> — подтверждение подлинности участников обмена</li>
+          <li><strong>Неотрекаемость</strong> — невозможность отказа от совершенных действий</li>
+          <li><strong>Управление ключами</strong> — генерация, распределение, хранение и уничтожение ключей</li>
+          <li><strong>Стойкость</strong> — сопротивление криптоанализу и атакам</li>
+          <li><strong>Эффективность</strong> — разумное соотношение безопасности и производительности</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

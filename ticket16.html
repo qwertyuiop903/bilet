@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 16</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 16</h1>
+
+    <div class="question">
+      <h2>1. Раскройте сущность понятия «IoT». Перечислите достоинства и недостатки IoT. Перечислите компоненты IoT-системы и укажите их функциональное назначение.</h2>
+      <div class="answer">
+        <p><strong>IoT (Интернет вещей)</strong> — сеть физических устройств, оснащённых датчиками, ПО и связью, которые взаимодействуют и обмениваются данными через интернет.</p>
+        <p><u>Достоинства IoT:</u></p>
+        <ul>
+          <li>Автоматизация и повышение эффективности процессов</li>
+          <li>Удалённый мониторинг и управление</li>
+          <li>Сбор и анализ больших данных</li>
+          <li>Улучшение качества жизни и сервисов</li>
+        </ul>
+        <p><u>Недостатки IoT:</u></p>
+        <ul>
+          <li>Проблемы безопасности и приватности</li>
+          <li>Высокая сложность систем</li>
+          <li>Зависимость от сетевой инфраструктуры</li>
+          <li>Проблемы совместимости устройств</li>
+        </ul>
+        <p><u>Компоненты IoT-системы:</u></p>
+        <ul>
+          <li><strong>Устройства (датчики и исполнительные механизмы)</strong> — сбор и выполнение команд</li>
+          <li><strong>Сети связи</strong> — передача данных между устройствами и серверами</li>
+          <li><strong>Облачные платформы и серверы</strong> — хранение, обработка и анализ данных</li>
+          <li><strong>Программное обеспечение</strong> — управление устройствами и данными, интерфейсы пользователя</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Что такое «процесс» и «поток»? Объясните принцип работы распространённых алгоритмов планирования процессов.</h2>
+      <div class="answer">
+        <p><strong>Процесс</strong> — программа в состоянии выполнения с собственным адресным пространством и системными ресурсами.</p>
+        <p><strong>Поток</strong> — наименьшая единица выполнения внутри процесса, разделяющая адресное пространство и ресурсы с другими потоками процесса.</p>
+        <p><u>Алгоритмы планирования процессов:</u></p>
+        <ul>
+          <li><strong>FCFS (First Come First Serve)</strong> — процессы выполняются в порядке поступления, прост в реализации, но возможны задержки.</li>
+          <li><strong>Round Robin</strong> — каждому процессу выделяется квант времени по очереди, обеспечивает справедливость.</li>
+          <li><strong>Priority Scheduling</strong> — процессы с более высоким приоритетом выполняются раньше, может привести к голоданию низкоприоритетных.</li>
+          <li><strong>Multilevel Queue</strong> — процессы разделены на очереди по приоритетам, каждая очередь имеет свой алгоритм планирования.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «транзакция». Охарактеризуйте особенности работы транзакций в SQL. Перечислите и опишите набор требований к транзакционной системе (ACID).</h2>
+      <div class="answer">
+        <p><strong>Транзакция</strong> — последовательность операций с базой данных, которая выполняется как единое целое: либо полностью, либо не выполняется вовсе.</p>
+        <p><u>Особенности работы транзакций в SQL:</u></p>
+        <ul>
+          <li>Транзакция начинается командой <code>BEGIN</code> и завершается <code>COMMIT</code> (сохранение изменений) или <code>ROLLBACK</code> (отмена изменений).</li>
+          <li>Обеспечивает целостность и непротиворечивость данных.</li>
+          <li>Поддерживает параллельность работы нескольких пользователей.</li>
+        </ul>
+        <p><u>Требования ACID:</u></p>
+        <ul>
+          <li><strong>Atomicity (Атомарность)</strong> — все операции транзакции выполняются полностью или не выполняются вовсе.</li>
+          <li><strong>Consistency (Согласованность)</strong> — транзакция переводит базу данных из одного согласованного состояния в другое.</li>
+          <li><strong>Isolation (Изоляция)</strong> — параллельные транзакции не влияют друг на друга, результаты видны только после коммита.</li>
+          <li><strong>Durability (Долговечность)</strong> — после фиксации транзакции её изменения сохраняются навсегда, даже при сбоях.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

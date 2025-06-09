@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 19</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+      color: #003366;
+    }
+    .answer p {
+      margin: 0.5rem 0;
+    }
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .question h2 {
+        font-size: 1rem;
+      }
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 19</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «видеокарта». Опишите разновидности видеокарт. Опишите основные характеристики видеокарты.</h2>
+      <div class="answer">
+        <p><strong>Видеокарта</strong> — аппаратное устройство, предназначенное для обработки и вывода графической информации на экран монитора.</p>
+        <p><u>Разновидности видеокарт:</u></p>
+        <ul>
+          <li><strong>Интегрированные видеокарты</strong> — встроены в материнскую плату или процессор, используют системную память.</li>
+          <li><strong>Дискретные видеокарты</strong> — отдельные устройства с собственной видеопамятью и мощным графическим процессором (GPU).</li>
+          <li><strong>Внешние видеокарты</strong> — подключаются отдельно, например, через Thunderbolt, для повышения графической производительности.</li>
+        </ul>
+        <p><u>Основные характеристики видеокарты:</u></p>
+        <ul>
+          <li><strong>Графический процессор (GPU):</strong> производительность и архитектура.</li>
+          <li><strong>Объем видеопамяти (VRAM):</strong> количество памяти для хранения текстур и буферов.</li>
+          <li><strong>Тип памяти:</strong> GDDR5, GDDR6, HBM и др.</li>
+          <li><strong>Разрядность шины памяти:</strong> влияет на пропускную способность.</li>
+          <li><strong>Частота работы GPU и памяти:</strong> влияет на скорость обработки графики.</li>
+          <li><strong>Поддерживаемые технологии:</strong> DirectX, OpenGL, аппаратное ускорение.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятию «диспетчер задач». Опишите основные функции диспетчера задач.</h2>
+      <div class="answer">
+        <p><strong>Диспетчер задач</strong> — системная утилита ОС, позволяющая контролировать работу процессов, ресурсов и состояния системы.</p>
+        <p><u>Основные функции диспетчера задач:</u></p>
+        <ul>
+          <li>Просмотр запущенных приложений и процессов.</li>
+          <li>Мониторинг использования процессора, памяти, диска и сети.</li>
+          <li>Завершение или приостановка процессов.</li>
+          <li>Управление автозагрузкой программ.</li>
+          <li>Просмотр информации о производительности системы.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятия «индекс». Опишите принцип работы индексов. Перечислите и охарактеризуйте виды индексов.</h2>
+      <div class="answer">
+        <p><strong>Индекс</strong> — структура данных, используемая в базах данных для ускорения поиска и сортировки информации.</p>
+        <p><u>Принцип работы:</u> индекс создаёт упорядоченный указатель на строки таблицы, позволяя быстро находить данные без полного сканирования таблицы.</p>
+        <p><u>Виды индексов:</u></p>
+        <ul>
+          <li><strong>Первичный индекс:</strong> основан на первичном ключе, уникален для каждой строки.</li>
+          <li><strong>Вторичный (непервичный) индекс:</strong> создаётся по другим столбцам, может быть неуникальным.</li>
+          <li><strong>Уникальный индекс:</strong> обеспечивает уникальность значений в столбце.</li>
+          <li><strong>Составной индекс:</strong> индекс по нескольким столбцам.</li>
+          <li><strong>Полнотекстовый индекс:</strong> для быстрого поиска текста в больших объёмах данных.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билет 3</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+      font-style: normal;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 3</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «сеть Ethernet». Опишите характеристики и функционирование сети Ethernet.</h2>
+      <div class="answer">
+        <p><strong>Сеть Ethernet</strong> — это технология проводной локальной сети, использующая метод множественного доступа с контролем несущей и обнаружением коллизий (CSMA/CD)</p>
+        <p><u>Характеристики Ethernet</u></p>
+        <ul>
+          <li>Скорости передачи — от 10 Мбит/с до 100 Гбит/с</li>
+          <li>Топология — звезда, шина (раньше), теперь в основном звезда через коммутаторы</li>
+          <li>Формат кадра — включает MAC-адреса, тип данных, контрольную сумму</li>
+          <li>Длина пакета — от 64 до 1518 байт (без Jumbo Frame)</li>
+        </ul>
+        <p><u>Функционирование</u></p>
+        <ul>
+          <li>Устройства обмениваются кадрами по MAC-адресам</li>
+          <li>Коммутаторы пересылают кадры по таблице MAC-адресов</li>
+          <li>При коллизиях (на старом оборудовании) данные пересылаются заново</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Что обозначает понятие «администрирование ОС»? Перечислите и опишите основные задачи системного администратора.</h2>
+      <div class="answer">
+        <p><strong>Администрирование операционной системы</strong> — это комплекс задач по настройке, обслуживанию и контролю работы ОС для обеспечения её стабильного функционирования</p>
+        <p><u>Основные задачи системного администратора</u></p>
+        <ul>
+          <li>Установка и настройка ОС и программного обеспечения</li>
+          <li>Управление пользователями и правами доступа</li>
+          <li>Резервное копирование и восстановление данных</li>
+          <li>Обеспечение безопасности и антивирусной защиты</li>
+          <li>Мониторинг производительности системы</li>
+          <li>Настройка сетевых подключений и служб</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «нормализация БД». Охарактеризуйте первых три этапа нормализации.</h2>
+      <div class="answer">
+        <p><strong>Нормализация БД</strong> — это процесс приведения структуры базы данных к форме, исключающей избыточность и аномалии при обновлении данных</p>
+        <p><u>Три первых нормальные формы</u></p>
+        <ul>
+          <li><strong>1НФ</strong> — устранение повторяющихся групп, каждая ячейка должна содержать атомарное значение</li>
+          <li><strong>2НФ</strong> — удаление частичных зависимостей (все неключевые атрибуты должны зависеть от всего ключа)</li>
+          <li><strong>3НФ</strong> — устранение транзитивных зависимостей (неключевые атрибуты не должны зависеть от других неключевых)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

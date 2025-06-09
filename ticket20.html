@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 20</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+      color: #003366;
+    }
+    .answer p {
+      margin: 0.5rem 0;
+    }
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .question h2 {
+        font-size: 1rem;
+      }
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 20</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «представление». Укажите особенности и ограничения представлений.</h2>
+      <div class="answer">
+        <p><strong>Представление</strong> — виртуальная таблица в базе данных, которая формируется на основе результата выполнения запроса к одной или нескольким таблицам.</p>
+        <p><u>Особенности и ограничения представлений:</u></p>
+        <ul>
+          <li>Не хранит данные физически, данные извлекаются динамически при обращении.</li>
+          <li>Может содержать вычисляемые поля и агрегатные функции.</li>
+          <li>Обеспечивает уровень абстракции и безопасность, скрывая детали таблиц.</li>
+          <li>Ограничения: в некоторых СУБД представления могут быть только для чтения.</li>
+          <li>Не все операции обновления возможны через представления, особенно если они включают объединения или агрегаты.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Дайте определение понятиям «IPv6 адресация», «маска подсети». Укажите и охарактеризуйте, из каких логических частей состоит любой IP адрес.</h2>
+      <div class="answer">
+        <p><strong>IPv6 адресация</strong> — современный протокол интернет-протокола, использующий 128-битные адреса, обеспечивающий расширенный адресный пространство по сравнению с IPv4.</p>
+        <p><strong>Маска подсети</strong> — битовая маска, которая разделяет IP-адрес на сетевую и адресную части, определяя размер подсети.</p>
+        <p><u>Логические части любого IP-адреса:</u></p>
+        <ul>
+          <li><strong>Сетевая часть</strong> — идентифицирует сеть, к которой принадлежит устройство.</li>
+          <li><strong>Подсеть (в некоторых моделях)</strong> — дополнительное разделение сети для организации логической структуры.</li>
+          <li><strong>Хостовая часть</strong> — уникальный адрес устройства в пределах сети или подсети.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «файловая система», «файл», «директория». Опишите возможные способы защиты файлов.</h2>
+      <div class="answer">
+        <p><strong>Файловая система</strong> — способ организации, хранения и управления файлами на носителе информации.</p>
+        <p><strong>Файл</strong> — именованная область хранения данных, содержащая информацию или программы.</p>
+        <p><strong>Директория</strong> — структура, которая содержит ссылки на файлы и другие директории, обеспечивая иерархическую организацию.</p>
+        <p><u>Способы защиты файлов:</u></p>
+        <ul>
+          <li>Установка прав доступа (чтение, запись, выполнение) для пользователей и групп.</li>
+          <li>Использование шифрования файлов и каталогов.</li>
+          <li>Антивирусный контроль и сканирование.</li>
+          <li>Создание резервных копий.</li>
+          <li>Использование систем аутентификации и авторизации.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

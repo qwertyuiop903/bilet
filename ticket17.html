@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Билет 17</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 17</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «триггер». Укажите функциональное назначение триггеров. Укажите и охарактеризуйте кодовые слова, которые указывают момент срабатывания триггера.</h2>
+      <div class="answer">
+        <p><strong>Триггер</strong> — специальная процедура в базе данных, которая автоматически выполняется при наступлении определённых событий (вставка, обновление, удаление).</p>
+        <p><u>Функциональное назначение триггеров:</u></p>
+        <ul>
+          <li>Автоматизация контроля целостности данных</li>
+          <li>Поддержка сложной бизнес-логики</li>
+          <li>Логирование изменений</li>
+          <li>Реализация каскадных операций</li>
+        </ul>
+        <p><u>Кодовые слова момента срабатывания триггера:</u></p>
+        <ul>
+          <li><strong>BEFORE</strong> — триггер срабатывает до выполнения операции</li>
+          <li><strong>AFTER</strong> — триггер срабатывает после выполнения операции</li>
+          <li><strong>INSTEAD OF</strong> — триггер заменяет операцию (обычно для представлений)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Что называется «топологией сети»? Перечислите её виды и опишите, чем физическая топология отличается от логической. Укажите факторы, влияющие на выбор топологии.</h2>
+      <div class="answer">
+        <p><strong>Топология сети</strong> — это схема или структура физического и логического соединения узлов сети.</p>
+        <p><u>Виды топологий:</u></p>
+        <ul>
+          <li>Шина (Bus)</li>
+          <li>Звезда (Star)</li>
+          <li>Кольцо (Ring)</li>
+          <li>Древовидная (Tree)</li>
+          <li>Ячеистая (Mesh)</li>
+        </ul>
+        <p><u>Физическая топология</u> описывает физическое расположение и соединение кабелей и устройств.</p>
+        <p><u>Логическая топология</u> описывает, как данные перемещаются по сети, независимо от физической структуры.</p>
+        <p><u>Факторы выбора топологии:</u></p>
+        <ul>
+          <li>Размер и масштаб сети</li>
+          <li>Стоимость оборудования и прокладки кабелей</li>
+          <li>Требования к производительности и отказоустойчивости</li>
+          <li>Простота управления и расширения</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятиям «Unix» и «Linux». Перечислите преимущества и недостатки Linux.</h2>
+      <div class="answer">
+        <p><strong>Unix</strong> — семейство многопользовательских операционных систем, разработанных в 1970-х годах с фокусом на портируемость, многозадачность и безопасность.</p>
+        <p><strong>Linux</strong> — свободная и открытая Unix-подобная операционная система, ядро которой разработано Линусом Торвальдсом в 1991 году.</p>
+        <p><u>Преимущества Linux:</u></p>
+        <ul>
+          <li>Свободное распространение и открытый исходный код</li>
+          <li>Высокая стабильность и безопасность</li>
+          <li>Большое сообщество и поддержка</li>
+          <li>Широкий выбор дистрибутивов под разные задачи</li>
+          <li>Гибкость и масштабируемость</li>
+        </ul>
+        <p><u>Недостатки Linux:</u></p>
+        <ul>
+          <li>Сложность для новичков в установке и настройке</li>
+          <li>Ограниченная поддержка некоторых проприетарных программ и игр</li>
+          <li>Не всегда удобный графический интерфейс по умолчанию</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

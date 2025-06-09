@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 9</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 9</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятию «интерфейс ОС». Перечислите и охарактеризуйте основные элементы графического интерфейса ОС Windows</h2>
+      <div class="answer">
+        <p><strong>Интерфейс операционной системы</strong> — это средство взаимодействия пользователя с ОС, предоставляющее доступ к функциям системы и приложениям.</p>
+        <p><u>Элементы графического интерфейса Windows:</u></p>
+        <ul>
+          <li><strong>Рабочий стол</strong> — основное пространство с ярлыками и фоном</li>
+          <li><strong>Панель задач</strong> — содержит меню «Пуск», открытые окна, часы и уведомления</li>
+          <li><strong>Окна</strong> — рамки программ с заголовком, кнопками управления</li>
+          <li><strong>Меню «Пуск»</strong> — центральная точка запуска программ и поиска</li>
+          <li><strong>Проводник</strong> — инструмент для работы с файлами и папками</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Укажите назначение команды ALTER TABLE. Перечислите способы применения ALTER TABLE для изменения таблицы</h2>
+      <div class="answer">
+        <p><strong>ALTER TABLE</strong> — команда SQL, используемая для изменения структуры существующей таблицы.</p>
+        <p><u>Применения ALTER TABLE:</u></p>
+        <ul>
+          <li>Добавление столбца: <code>ADD COLUMN</code></li>
+          <li>Удаление столбца: <code>DROP COLUMN</code></li>
+          <li>Изменение типа столбца: <code>MODIFY / ALTER COLUMN</code></li>
+          <li>Переименование столбца: <code>RENAME COLUMN</code></li>
+          <li>Добавление/удаление ограничений: <code>ADD/DROP CONSTRAINT</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «асимметричная криптосистема». Охарактеризуйте алгоритм шифрования RSA и схему Эль-Гамаля</h2>
+      <div class="answer">
+        <p><strong>Асимметричная криптосистема</strong> — это метод шифрования, в котором используются два ключа: публичный для шифрования и приватный для расшифровки.</p>
+        <p><u>RSA:</u></p>
+        <ul>
+          <li>Основывается на сложности факторизации больших чисел</li>
+          <li>Ключи формируются с использованием двух больших простых чисел</li>
+          <li>Широко применяется для шифрования и цифровых подписей</li>
+        </ul>
+        <p><u>Схема Эль-Гамаля:</u></p>
+        <ul>
+          <li>Основана на трудности вычисления дискретного логарифма</li>
+          <li>Генерируется пара ключей: открытый и закрытый</li>
+          <li>Шифрование сопровождается рандомизацией, что делает один и тот же текст разным при повторном шифровании</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>

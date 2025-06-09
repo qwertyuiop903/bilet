@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет 14</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 2rem;
+    }
+
+    .question h2 {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+
+    .answer {
+      background: #f1f9ff;
+      padding: 1rem;
+      border-left: 4px solid #79aee0;
+      border-radius: 6px;
+    }
+
+    .answer p {
+      margin: 0.5rem 0;
+    }
+
+    .answer ul {
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    .answer ul li::before {
+      content: "– ";
+      color: #004080;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .question h2 {
+        font-size: 1rem;
+      }
+
+      .answer {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 14</h1>
+
+    <div class="question">
+      <h2>1. Перечислите категории встроенных функции в SQL. Приведите примеры функций каждой категории. Укажите примеры практического использования этих функций</h2>
+      <div class="answer">
+        <p><u>Категории встроенных функций:</u></p>
+        <ul>
+          <li><strong>Агрегатные:</strong> SUM, COUNT, AVG, MIN, MAX</li>
+          <li><strong>Строковые:</strong> LENGTH, CONCAT, SUBSTRING, LOWER, UPPER</li>
+          <li><strong>Математические:</strong> ABS, ROUND, CEIL, FLOOR</li>
+          <li><strong>Дата и время:</strong> NOW, CURDATE, DATEDIFF, MONTH</li>
+        </ul>
+        <p><u>Примеры использования:</u></p>
+        <ul>
+          <li><code>SELECT AVG(price) FROM products</code> — средняя цена товаров</li>
+          <li><code>SELECT CONCAT(first_name, ' ', last_name) FROM users</code> — объединение имени и фамилии</li>
+          <li><code>SELECT DATEDIFF(CURDATE(), birth_date) FROM users</code> — возраст в днях</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Опишите принцип работы, преимущества и недостатки динамической маршрутизации. Приведите примеры протоколов динамической маршрутизации и охарактеризуйте их</h2>
+      <div class="answer">
+        <p><strong>Динамическая маршрутизация</strong> — автоматическое построение маршрутов с помощью специальных протоколов.</p>
+        <p><u>Преимущества:</u></p>
+        <ul>
+          <li>Автоматическая адаптация к изменениям в сети</li>
+          <li>Упрощение администрирования в больших сетях</li>
+        </ul>
+        <p><u>Недостатки:</u></p>
+        <ul>
+          <li>Более высокая нагрузка на оборудование</li>
+          <li>Задержки при пересчете маршрутов</li>
+        </ul>
+        <p><u>Примеры протоколов:</u></p>
+        <ul>
+          <li><strong>RIP</strong> — простой протокол, основанный на количестве переходов</li>
+          <li><strong>OSPF</strong> — использует алгоритм Дейкстры, более эффективен в больших сетях</li>
+          <li><strong>BGP</strong> — протокол междоменной маршрутизации, используется в Интернете</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «компьютерный вирус». Перечислите пути заражения компьютера вирусами. Опишите признаки заражения компьютера вирусами</h2>
+      <div class="answer">
+        <p><strong>Компьютерный вирус</strong> — это вредоносная программа, способная самостоятельно распространяться и наносить вред системе.</p>
+        <p><u>Пути заражения:</u></p>
+        <ul>
+          <li>Через вложения в электронных письмах</li>
+          <li>Скачивание файлов из ненадежных источников</li>
+          <li>Съемные носители (USB)</li>
+          <li>Уязвимости в ПО</li>
+        </ul>
+        <p><u>Признаки заражения:</u></p>
+        <ul>
+          <li>Замедление работы компьютера</li>
+          <li>Самопроизвольный запуск программ</li>
+          <li>Появление неизвестных окон и сообщений</li>
+          <li>Изменение или исчезновение файлов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+</body>
+</html>
