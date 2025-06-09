@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Содержание билетов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Содержание билетов</h1>
+    <ul class="ticket-list">
+      <!-- Ссылки на билеты 1-25 -->
+      <!-- При желании можно вставить темы или короткое описание -->
+      <!-- Пример ниже -->
+      <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+      <li><a href="ticket1.html">Билет 1</a></li>
+      <li><a href="ticket2.html">Билет 2</a></li>
+      <li><a href="ticket3.html">Билет 3</a></li>
+      <li><a href="ticket4.html">Билет 4</a></li>
+      <li><a href="ticket5.html">Билет 5</a></li>
+      <li><a href="ticket6.html">Билет 6</a></li>
+      <li><a href="ticket7.html">Билет 7</a></li>
+      <li><a href="ticket8.html">Билет 8</a></li>
+      <li><a href="ticket9.html">Билет 9</a></li>
+      <li><a href="ticket10.html">Билет 10</a></li>
+      <li><a href="ticket11.html">Билет 11</a></li>
+      <li><a href="ticket12.html">Билет 12</a></li>
+      <li><a href="ticket13.html">Билет 13</a></li>
+      <li><a href="ticket14.html">Билет 14</a></li>
+      <li><a href="ticket15.html">Билет 15</a></li>
+      <li><a href="ticket16.html">Билет 16</a></li>
+      <li><a href="ticket17.html">Билет 17</a></li>
+      <li><a href="ticket18.html">Билет 18</a></li>
+      <li><a href="ticket19.html">Билет 19</a></li>
+      <li><a href="ticket20.html">Билет 20</a></li>
+      <li><a href="ticket21.html">Билет 21</a></li>
+      <li><a href="ticket22.html">Билет 22</a></li>
+      <li><a href="ticket23.html">Билет 23</a></li>
+      <li><a href="ticket24.html">Билет 24</a></li>
+      <li><a href="ticket25.html">Билет 25</a></li>
+    </ul>
+  </div>
+  <style>/* Общие стили */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  padding: 1.5rem;
+  background: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+
+.ticket-list li {
+  text-align: center;
+}
+
+.ticket-list a {
+  display: block;
+  padding: 0.75rem 0.5rem;
+  background-color: #e0f0ff;
+  color: #004080;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.ticket-list a:hover {
+  background-color: #b3daff;
+  color: #00264d;
+}
+
+/* 🔁 Адаптация под маленькие экраны */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .ticket-list {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .ticket-list a {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.4rem;
+  }
+}
+</style>
+</body>
+</html>

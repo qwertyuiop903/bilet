@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билет 1</title>
+  <link rel="stylesheet" href="ticket-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Билет 1</h1>
+
+    <div class="question">
+      <h2>1. Дайте определение понятиям «база данных», «система управления базами данных (СУБД)». Перечислите и охарактеризуйте основные функции СУБД.</h2>
+      <div class="answer">
+        <p><strong>База данных (БД)</strong> — это организованная совокупность данных, предназначенная для хранения, изменения и обработки информации</p>
+        <p><strong>Система управления базами данных (СУБД)</strong> — программное обеспечение для работы с базами данных</p>
+        <p><u>Основные функции СУБД</u></p>
+        <ul>
+          <li>Управление данными (добавление, удаление, изменение, поиск)</li>
+          <li>Управление транзакциями (целостность данных)</li>
+          <li>Обеспечение безопасности и разграничения прав доступа</li>
+          <li>Резервное копирование и восстановление данных</li>
+          <li>Поддержка многопользовательского доступа и параллелизма</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Перечислите и охарактеризуйте задачи канального уровня. Приведите примеры протоколов канального уровня и дайте их подробную характеристику.</h2>
+      <div class="answer">
+        <p>Канальный уровень отвечает за передачу данных между узлами сети по физическому каналу</p>
+        <p><u>Задачи канального уровня</u></p>
+        <ul>
+          <li>Обнаружение и коррекция ошибок передачи</li>
+          <li>Упаковка данных в кадры</li>
+          <li>Управление доступом к среде передачи</li>
+          <li>Обнаружение границ кадров</li>
+        </ul>
+        <p><u>Примеры протоколов</u></p>
+        <ul>
+          <li><strong>Ethernet</strong> — протокол для проводных сетей с методом CSMA/CD</li>
+          <li><strong>PPP</strong> — протокол точка-точка для соединения по последовательному каналу</li>
+          <li><strong>HDLC</strong> — протокол управления потоком и коррекции ошибок</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Дайте определение понятию «система управления доступом». Перечислите и охарактеризуйте основные аспекты системы управления доступом в Windows.</h2>
+      <div class="answer">
+        <p><strong>Система управления доступом</strong> — это набор механизмов, определяющих, кто и какие действия может выполнять с ресурсами</p>
+        <p><u>Аспекты системы управления доступом в Windows</u></p>
+        <ul>
+          <li><strong>ACL</strong> — списки контроля доступа для объектов</li>
+          <li><strong>Права пользователей и групп</strong> — настройка доступа к файлам, программам и функциям</li>
+          <li><strong>Аудит безопасности</strong> — журналирование попыток доступа</li>
+          <li><strong>Роли и политики</strong> — централизованное управление через GPO</li>
+          <li><strong>UAC</strong> — защита от выполнения опасных действий</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Назад к списку билетов</a>
+    </div>
+  </div>
+
+  <style>body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #004080;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.question {
+  margin-bottom: 2rem;
+}
+
+.question h2 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  background: #f1f9ff;
+  padding: 1rem;
+  border-left: 4px solid #79aee0;
+  border-radius: 6px;
+}
+
+.answer p {
+  margin: 0.5rem 0;
+  font-style: normal;
+}
+
+.answer ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  list-style-type: none;
+}
+
+.answer ul li::before {
+  content: "– ";
+  color: #004080;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .question h2 {
+    font-size: 1rem;
+  }
+
+  .answer {
+    padding: 0.8rem;
+  }
+}
+
+</style>
+</body>
+</html>
